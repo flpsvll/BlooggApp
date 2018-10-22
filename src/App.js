@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Sidebar } from "./containers/Sidebar"
+import { PostsList } from "./containers/PostsList"
+import { AddPost } from "./containers/AddPost"
 
 class App extends Component {
   render() {
     return (
       <div id="container">
-      <aside id "sidebar">Users</aside>
+        <Sidebar />         
         <section id="main">
-          <section id="message-list">Messages List</section>
-          <section id="new-message">New Message</section>
+          <PostsList />
+          <AddPost />
         </section>
       </div>
     );
